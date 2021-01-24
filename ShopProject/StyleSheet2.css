@@ -1,0 +1,181 @@
+﻿* {
+    font-family: calibri;
+}
+
+h3 {
+    color: #797979;
+    font-size: 20px;
+    margin: 10px 0 10px 20px;
+    padding: 0;
+}
+
+.wrapper {
+    width: 1150px;
+    height: auto;
+    margin: 0 auto;
+    background: #000;
+}
+
+.header {
+    width: 99.5%;
+    height: 70px;
+    background: #383838;
+    color: #fff;
+    line-height: 60px;
+}
+
+.side-nav {
+    width: 19%;
+    height: 800px;
+    float: left;
+    background: #1d1d1d;
+}
+
+.main-content {
+    width: 80.5%;
+    height: 800px;
+    overflow-y: scroll;
+    float: left;
+    background: #3F3F3F;
+    margin-bottom: 2px;
+}
+
+.content {
+    height: 800px;
+}
+
+#ex2::-webkit-scrollbar {
+    width: 16px;
+    background-color: #cccccc;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#ex2::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    border-radius: 10px;
+}
+
+    #ex2::-webkit-scrollbar-thumb:hover {
+    }
+
+#ex2::-webkit-scrollbar-track {
+    border: 1px gray solid;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 6px gray inset;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+
+/*a:link, a:visited {
+    display: block;
+    color: #ccc;
+    width: 130px;
+    text-align: left;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 16.5px;
+    border-radius: 5px;
+}*/
+
+/*a:hover, a:active {
+    background-color: #999999;
+}*/
+
+.checked {
+    display: block;
+    color: #FFFFFF;
+    background-color: #999999;
+    text-align: left;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+#gallery li {
+    list-style-type: none;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    width: 190px;
+    height: 320px;
+    margin: 15px 0 0 20px;
+}
+
+    #gallery li:hover {
+        opacity: 1.0;
+        filter: alpha(opacity=100);
+    }
+
+    #gallery li img {
+        display: block;
+        box-shadow: 3px 3px 5px #888;
+
+    }
+
+    #gallery li h2 {
+        margin: 0 0 0 5px;
+        padding: 0;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    #gallery li h3 {
+        margin: 0 0 0 5px;
+        padding: 0;
+        color: #fff;
+        font-size: 15px;
+    }
+
+    #gallery li span {
+        width: 170px;
+        height: auto;
+        background-color: #FF6600;
+        font-size: 12px;
+        color: #fff;
+        position: absolute;
+        bottom: -30%;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+    }
+
+    #gallery li:hover span {
+        bottom: 0px;
+        height: auto;
+    }
+
+#gallery a:link, a:visited {
+}
+
+#gallery a:hover, a:active {
+    background: none;
+}
+
+.contenticer {
+    border: 1px solid white;
+    width: 70.5%;
+    height: auto;
+    margin: 5px;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.contenticer {
+    color: #FFFFFF;
+}
+
+.resim {
+    width: 150px;
+    height: 225px;
+    float: inherit;
+    margin: 5px;
+}

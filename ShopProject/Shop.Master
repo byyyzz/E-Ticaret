@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Shop.Master.cs" Inherits="ShopProject.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link href="style/bootstrap-4.5.3-dist/assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style type="text/css">
+        #header1 {
+            height: 72px;
+            width: 981px;
+        }
+
+        .auto-style1 {
+            height: 319px;
+            
+        }
+     
+    </style>
+</head>
+<body class="auto-style1">
+
+    <form id="form1" runat="server" aria-orientation="vertical">
+
+        <div class="header1" style="font-size: large; color: #FF6600; background-color:white">
+            <a href="Anasayfa.aspx" style="font-size: large; color: #FF6600; font-weight: bold;">SHOPONLINE.CO</a>
+            <asp:TextBox ID="SearchText" runat="server" Style="text-align: center" Width="324px">Aradığınız ürünü giriniz...</asp:TextBox>
+
+            &nbsp;<asp:Button ID="AraButton" runat="server" Text="Ara" OnClick="AraButton_Click" CssClass="btn btn-light" Font-Bold="True" ForeColor="#FF6600" />
+            &nbsp;&nbsp;
+            <asp:Button ID="Sepetim" runat="server" CssClass="btn btn-light" Font-Bold="True" Font-Size="Large" ForeColor="#FF6600" Height="37px" OnClick="Sepetim_Click" Text="Sepetim" Width="99px" />
+            &nbsp;|
+            <asp:Button ID="Giris" runat="server" Text="Giriş Yap" CssClass="btn btn-light" Style="color: #FF6600; font-size: large; font-weight: bold; height: 37px; width: 99px;" OnClick="Giris_Click1" Font-Bold="True" Font-Size="Larger" />
+            &nbsp;|
+            <asp:Button ID="Cikis" runat="server" Text="Çıkış Yap" CssClass="btn btn-light" Style="color: #FF6600; font-size: large; font-weight: bold; height: 37px; width: 99px;" OnClick="Cikis_Click1" Font-Bold="True" Font-Size="Larger" ForeColor="#FF6600" />
+
+        </div>
+
+        <hr style="border-color: #8D8D8D">
+        <div class="header2" style="font-size: large; color: #FF6600; text-align: center; font-weight: bold; ">
+
+
+            <a href="#" style="color: #FF6600; font-weight: bold;">Kıyafet&nbsp;|</a>&nbsp;
+            <a href="#" style="color: #FF6600">Ev ve Yaşam&nbsp;|</a>&nbsp;
+            <a href="#" style="color: #FF6600">Saat&Aksesuar&nbsp;|</a>&nbsp;
+            <a href="#" style="color: #FF6600">Kozmetik&nbsp;|</a>&nbsp;
+            <a href="#" style="color: #FF6600">Ayakkabı&nbsp;|</a>&nbsp;
+            <a href="#" style="color: #FF6600">Çanta&nbsp;|</a>&nbsp;
+            <a href="#" style="color: #FF6600">Süpermarket&nbsp;|</a>&nbsp;        
+               
+
+
+        </div>
+         <hr style="border-color: #8D8D8D"><br />
+
+        <div class="content" >
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
+
+
+
